@@ -14,6 +14,7 @@ Building the image locally requires the BitNet-b1.58-2B-4T/ggml-model-i2_s.gguf 
 
 ```
 docker build . -t chat
+docker run -it --rm --user modeluser chat-llm /bin/bash
 ```
 
 ### Run
