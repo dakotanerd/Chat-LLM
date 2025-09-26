@@ -106,7 +106,7 @@ python chat.py --clear-log
 ## Project Structure
 
 ```
-BitNet/
+chat/
 ├─ chat.py                # Main analysis script
 ├─ generate_dataset.py    # Script to create dataset JSONL from code samples
 ├─ code_samples/          # Example code samples for dataset
