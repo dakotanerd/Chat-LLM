@@ -1,4 +1,4 @@
-# BitNet Vulnerability Analyzer
+# Chat Vulnerability Analyzer
 
 **BitNet** is a local code vulnerability analyzer that uses both **heuristic checks** and an optional **dataset-based matching** system to identify potential security issues in code. It supports multiple programming languages and can scan individual files, entire folders, or code snippets.
 
