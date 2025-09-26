@@ -1,0 +1,7 @@
+model_name: bigcode/starcoder-7B
+dataset: vuln_dataset.jsonl
+output_dir: lora_vuln_model
+batch_size: 4
+learning_rate: 1e-4
+epochs: 3
+max_seq_len: 512

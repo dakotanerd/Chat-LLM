@@ -1,0 +1,18 @@
+INCIDENT REPORT: IR-20250815-001
+TIMESTAMP: 2025-08-15 08:30 AM EDT
+STATUS: ACTIVE INVESTIGATION
+
+SUMMARY:
+Unusual outbound network traffic was detected originating from server 'prod-app-03' (IP: 10.100.20.55). The traffic is directed towards a known malicious C2 server at IP 198.51.100.210 on port 4444. System logs show anomalous process creation initiated by the Java application running the DataStax Enterprise Server.
+
+SUSPECTED ROOT CAUSE:
+The attack vector is believed to be an exploit of the LogFusion library vulnerability, tracked as CVE-2025-4455. The application server is running a vulnerable version (1.5.2) of the library. Evidence suggests an attacker sent a malicious log message via the public-facing API, triggering a remote code execution payload.
+
+ACTIONS TAKEN:
+- The affected server 'prod-app-03' has been isolated from the network.
+- Firewall rules have been updated to block all traffic to 198.51.100.210.
+- A full memory and disk image of the compromised host is being captured for forensic analysis.
+
+NEXT STEPS:
+- Deploying emergency patch (upgrade to LogFusion 1.5.4) across all production servers.
+- Awaiting forensic report to determine the full extent of the breach.
