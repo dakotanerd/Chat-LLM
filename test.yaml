@@ -1,4 +1,0 @@
-# Test YAML configuration
-temperature: 0.2
-tokens: 200
-system_prompt: "You are a testing assistant. Respond with only the word 'test-yaml'."
